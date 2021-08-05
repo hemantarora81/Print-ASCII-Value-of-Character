@@ -1,0 +1,27 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+     
+        //Problem  -- ASCII Value of Character
+        //First Method - To assign the character to print ascii value
+        int ch1 = 'a';
+        int ch2 = 'b';
+        System.out.println("The ASCII Value is :" + ch1);
+        System.out.println("The ASCII value is :"+ ch2);
+
+        //Second Method -- If we do not want to assign character, we can also take a character from the user.
+        System.out.print("Enter a Character");
+        Scanner scanner1 = new Scanner(System.in);
+        char chr = scanner1.next().charAt(0);
+        int asciiValue = chr;
+       System.out.println("ASCII Value of "+ chr +" is:" +asciiValue);
+
+        //Third Method -- The following program prints the ASCII value (0 to 255) of all the characters
+        for (int i = 0; i <= 255; i++){
+            System.out.println("The ASCII Value is :" + (char)i + "=" + i);
+        }
+    }
+}
